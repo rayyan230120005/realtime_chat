@@ -1,0 +1,46 @@
+
+{
+  "name": "realtime-chat-app",
+  "version": "1.0.0",
+  "description": "Production-grade horizontally scalable real-time chat application with Express, MongoDB, Socket.io, Redis, JWT Auth and Docker",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "test:scaling": "node scripts/test-scaling.js",
+    "test:flow": "node scripts/test-chat-flow.js"
+  },
+  "keywords": [
+    "chat",
+    "realtime",
+    "socket.io",
+    "redis",
+    "mongodb",
+    "express",
+    "jwt",
+    "horizontal-scaling"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@socket.io/redis-adapter": "^8.3.0",
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "express-validator": "^7.2.1",
+    "ioredis": "^5.4.2",
+    "jsonwebtoken": "^9.0.2",
+    "mailgen": "^2.0.28",
+    "mongoose": "^8.9.5",
+    "nodemailer": "^6.9.16",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "socket.io-client": "^4.8.1"
+  }
+}
